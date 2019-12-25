@@ -6,6 +6,7 @@ install:
    - gem update --system
    - gem --version
    - bundle install
+   - gem install html-proofer
 script:
   - jekyll build
   - htmlproofer --url-ignore "/#.*/,/^\/index$/,/www\.it24hrs\.com/,/ffc\.in\.th/,/^\/news$/" ./_site --check-html
